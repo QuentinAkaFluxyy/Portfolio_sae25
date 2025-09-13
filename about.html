@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="portfoliocss.css">
+        <title>Portfolio : À propos</title>
+    </head>
+    <style>
+/* SECTION GÉNÉRALE */
+.about-section {
+  padding: 6rem 2rem 4rem;
+  background: linear-gradient(135deg, #466ff3, #4a92f7);
+  min-height: 100vh;
+}
+
+/* TITRE PRINCIPAL */
+.about-section h2 {
+  text-align: center;
+  color: white;
+  font-size: 3rem;
+  margin-bottom: 3rem;
+  text-shadow: 2px 2px 6px #00000060;
+  animation: fadeIn 2s ease-out;
+}
+
+/* CARTES CLÉS */
+.about-cards {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-bottom: 4rem;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.08);
+  padding: 2rem;
+  border-radius: 1rem;
+  width: 280px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+  text-align: center;
+  color: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 20px rgba(0,0,0,0.5);
+}
+
+.card-icon {
+  font-size: 2.5rem;
+  margin-bottom: 0.8rem;
+}
+
+/* BIO DÉTAILLÉE */
+.about-details {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  text-align: justify;
+  line-height: 1.8;
+  color: #f2f2f2;
+  font-size: 1.2rem;
+  background: rgba(255, 255, 255, 0.06);
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+  backdrop-filter: blur(4px);
+  animation: fadeInUp 1.5s ease;
+}
+
+/* PHOTO DE PROFIL */
+.pdp-wrapper {
+  position: absolute;
+  top: 120px;
+  right: 100px;
+  width: 160px;
+  height: 160px;
+  z-index: 10;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(255,255,255,0.3);
+}
+
+.pdp-placeholder {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #ffffff40;
+  transition: transform 0.4s ease;
+}
+
+.pdp-placeholder:hover {
+  transform: scale(1.05);
+}
+
+/* ANIMATIONS */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* RESPONSIVE */
+@media (max-width: 800px) {
+  .pdp-wrapper {
+    position: static;
+    margin: 0 auto 2rem;
+  }
+  .about-section h2 {
+    margin-top: 2rem;
+  }
+}
+</style>
+
+
+    <body class="top">
+        <nav>
+            <ul>
+                <li><a href="pageaccueilportefolio.html">Accueil</a></li>
+                <li><a href="competences.html">Mes compétences</a></li>
+                <li><a href="projets.html">Mes projets</a></li>
+                <li><a href="about.html">À propos</a></li>
+                <li><a href="doc/cv.pdf" class="cv-button" target="_blank">📄 Télécharger mon CV</a></li>
+            </ul>
+        </nav>
+        <div class="pdp-wrapper">
+                <img src="rephoto/tetequentin.jpg" alt="Photo de Quentin" class="pdp-placeholder" />
+            </div>
+        <section id="about-qa" class="about-section">
+            <svg class="vg-brush-title" viewBox="0 0 800 150" xmlns="http://www.w3.org/2000/svg">
+  <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle">
+    À propos de moi
+  </text>
+</svg>
+            <!-- Cartes clés -->
+            <main class="about-cards">
+                <div class="card">
+                    <div class="card-icon">🎓</div>
+                    <h3>2024 – Bac Math & Physique</h3>
+                    <p>Diplômé au Lycée des Eucalyptus avec mention Bien, j’ai acquis rigueur et sens de l’analyse.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🎯</div>
+                    <h3>2024–2027 – BUT Réseaux & Télécommunications</h3>
+                    <p>Actuellement en deuxième année à l’IUT Nice Côte d’Azur, je me spécialise en infrastructures réseaux et sécurité.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🚀</div>
+                    <h3>Objectif Alternance</h3>
+                    <p>Début juillet 2025 j'ai eu la chance de pouvoir signer un contrat de 2 ans d'apprentissage au : Crédit Agricole</p>
+                </div>
+            </main>
+            <!-- Biographie plus détaillée -->
+            <article class="about-details">
+                <p>Passionné par l’informatique depuis mon plus jeune âge, je suis constamment à la recherche de nouvelles technologies à découvrir. Mes études en mathématiques et physique m’ont donné une base solide pour comprendre les principes fondamentaux des réseaux et de la cybersécurité.</p>
+                <p>Curieux et méthodique, j’aime résoudre des problèmes complexes et travailler en équipe. Mon projet à court terme est de mettre mes compétences en pratique au sein d’une entreprise innovante, où je pourrais contribuer à sécuriser et optimiser les infrastructures réseau.</p>
+                <p>En dehors des cours, je participe à des ateliers et meetups tech pour échanger avec des professionnels et étoffer mon réseau. Autonome et persévérant, je suis prêt à relever les défis que vous me proposerez.</p>
+            </article>
+        </section>
+        <footer>
+            <div class="footer-content">
+                <p>&copy; Portfolio de GALES Quentin</p>
+                <div class="social-icons">
+                    <a href="https://github.com/QuentinGales" target="_blank" aria-label="GitHub">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" />
+                    </a>
+                    <a href="https://linkedin.com/in/quentin-gales" target="_blank" aria-label="LinkedIn">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn" />
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

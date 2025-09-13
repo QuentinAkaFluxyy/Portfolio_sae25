@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="portfoliocss.css">
+  <title>Portfolio : Mes projets</title>
+
+</head>
+<body class="top">
+  <nav>
+    <ul>
+      <li><a href="pageaccueilportefolio.html">Accueil</a></li>
+      <li><a href="competences.html">Mes compétences</a></li>
+      <li><a href="projets.html">Mes projets</a></li>
+      <li><a href="about.html">À propos</a></li>
+      <li><a href="doc/cv.pdf" class="cv-button" target="_blank">📄 Télécharger mon CV</a></li>
+    </ul>
+  </nav>
+
+  <section id="projects">
+    <!-- Projet 1 -->
+    <article class="project-card" style="background-image: url('rephoto/terrasse.jpg');">
+      <h2 class="project-title">SAE 21</h2>
+      <p class="project-desc">Simuler un réseau privé d'une entreprise sur Packet Tracer</p>
+      <dl class="project-structure">
+        <dt>🎯 Objectif / Problème à résoudre</dt>
+        <dd>Appliquer toutes les règles de sécurité et faire communiquer les bonnes machines.</dd>
+        <dt>🛠️ Action</dt>
+        <dd>
+          <ul>
+            <li>Créer le bon plan d'adressage IP.</li>
+            <li>Créer le réseau.</li>
+            <li>Configurer le Firewall.</li>
+          </ul>
+        </dd>
+        <dt>💻 Technos utilisées</dt>
+        <dd>Packet Tracer, CISCO, SWITCHS, ROUTEURS, VLANs, DHCP, DNS, STP et Firewall</dd>
+        <dt>📅 Lien de téléchargement :</dt>
+        <dd><a href="doc/projet21.pkt" download>📂 Télécharger le fichier .pkt</a></dd>
+      </dl>
+    </article>
+
+    <!-- Projet 2 -->
+    <article class="project-card" style="background-image: url('rephoto/fleurvg.jpg');">
+      <h2 class="project-title">SAE 23 et 24</h2>
+      <p class="project-desc">Créer un banc avionique intelligent pour Thales (photo, site web, communication réseau)</p>
+      <dl class="project-structure">
+        <dt>🎯 Objectif / Problème à résoudre</dt>
+        <dd>Site web sécurisé + système de capture avec Raspberry Pi + LED déclenchée selon la lumière.</dd>
+        <dt>🛠️ Action</dt>
+        <dd>
+          <ul>
+            <li>Créer le site web en PHP + SQLite.</li>
+            <li>Configurer le Raspberry Pi 3 pour la capture et l’hébergement.</li>
+            <li>Établir un réseau local privé entre Pi et PICO.</li>
+          </ul>
+        </dd>
+        <dt>💻 Technos utilisées</dt>
+        <dd>PHP, HTML5, CSS3, SQLite, BASH et Python</dd>
+        <dt>📸 Aperçu visuel</dt>
+        <dd><img src="rephoto/projetthales.png" alt="Projet Thales" class="project-screenshot"></dd>
+      </dl>
+    </article>
+
+    <!-- Projet 3 -->
+    <article class="project-card" style="background-image: url('rephoto/arbrevg.jpg');">
+      <h2 class="project-title">Gestionnaire de tâches</h2>
+      <p class="project-desc">Application perso pour créer et gérer des tâches avec contrainte visuelle.</p>
+      <dl class="project-structure">
+        <dt>🎯 Objectif</dt>
+        <dd>Créer, supprimer, mettre en pause des tâches avec animation de progression circulaire.</dd>
+        <dt>🛠️ Action</dt>
+        <dd>
+          <ul>
+            <li>Créer le site avec interface dynamique.</li>
+            <li>Utiliser les canvas CSS pour les cercles de progression colorés.</li>
+          </ul>
+        </dd>
+        <dt>💻 Technos utilisées</dt>
+        <dd>HTML5, CSS3</dd>
+        <dt>📸 Aperçu + Lien</dt>
+        <dd>
+          <a href="https://tasks-sao.onrender.com" target="_blank">🔗 Lien vers le site</a>
+          <img src="rephoto/tasks.png" alt="Gestionnaire de tâches" class="project-screenshot">
+        </dd>
+      </dl>
+    </article>
+    
+    <!-- Projet 4 -->
+     <article class="project-card" style="background-image: url('rephoto/portrait.jpg');">
+      <h2 class="project-title">Site HTML5/CSS3</h2>
+      <p class="project-desc">Petit projet pour apprendre les bases de HTML5 et CSS3.</p>
+      <dl class="project-structure">
+        <dt>🎯 Objectif</dt>
+        <dd>Coder un site internet uniquement avec HTML5 et CSS3 sans utilisation d'IA. Ce site met en avant mes passions, dont la musculation et la bioméchanique.</dd>
+        <dt>🛠️ Action</dt>
+        <dd>
+          <ul>
+            <li>Créer le site avec interface dynamique.</li>
+            <li>Utilisation d'animations en CSS3</li>
+          </ul>
+        </dd>
+        <dt>💻 Technos utilisées</dt>
+        <dd>HTML5, CSS3</dd>
+        <dt>📸 Aperçu + Lien</dt>
+        <dd>
+          <a href="https://tasks-sao.onrender.com" target="_blank">🔗 Lien vers le site</a>
+          <img src="rephoto/muscu.png" alt="site muscu" class="project-screenshot">
+          <img src="rephoto/muscu2.png" alt="site muscu" class="project-screenshot">
+        </dd>
+      </dl>
+    </article>
+
+    <!-- Projet 5 -->
+     <article class="project-card" style="background-image: url('rephoto/champ.jpg');">
+      <h2 class="project-title">Bot Discord</h2>
+      <p class="project-desc">Projet perso de modération Discord.</p>
+      <dl class="project-structure">
+        <dt>🎯 Objectif</dt>
+        <dd>Quand j'avais 12 ans je voulais me lancer dans le code. J'ai donc créé un bot Discord pour modérer mon serveur entre amis (éviter les spams) et ajouter des ester-eggs.</dd>
+        <dt>🛠️ Action</dt>
+        <dd>
+          <ul>
+            <li>Filtrage de mot.</li>
+            <li>Ajout d'ester-eggs.</li>
+            <li>Configurations de rôles Discord.</li>
+          </ul>
+        </dd>
+        <dt>💻 Technos utilisées</dt>
+        <dd>JavaScript</dd>
+        <dt>📸 Aperçu + Lien</dt>
+        <dd>
+          <a href="https://discord.gg/U9jDPv8M" target="_blank">🔗 Lien vers le serveur Discord</a>
+          <img src="rephoto/botdiscord.png" alt="Bot Discord" class="project-screenshot">
+          <img src="rephoto/rolebot2.png" alt="Rôle du bot Discord" class="project-screenshot">
+        </dd>
+      </dl>
+    </article>
+
+<!-- Projet 6 -->
+     <article class="project-card" style="background-image: url('rephoto/champfleur.jpg');">
+      <h2 class="project-title">Mod Minecraft - Code</h2>
+      <p class="project-desc">Projet perso de mod Minecraft.</p>
+      <dl class="project-structure">
+        <dt>🎯 Objectif</dt>
+        <dd>Développer ma propre version du mode de jeu : Fallen Kingdom. Créer un système de classe et de super-pouvoirs uniques ainsi que des items légendaires.</dd>
+        <dt>🛠️ Action</dt>
+        <dd>
+          <ul>
+            <li>Système de classe.</li>
+            <li>Création d'ulti.</li>
+            <li>Dévelopemment d'IA pour le BOSS.</li>
+            <li>Création d'items.</li>
+          </ul>
+        </dd>
+        <dt>💻 Technos utilisées</dt>
+        <dd>JAVA et MCreator</dd>
+        <dt>📸 Aperçu + Lien</dt>
+        <dd>
+          <a href="doc/fallen_kingdom_mod_quentin-1.0.0-neoforge-1.21.4.jar" target="_blank">🔗 Lien de téléchargement du mod</a>
+          <img src="rephoto/exemple_ingame.png" alt="Ingame exemple" class="project-screenshot">
+          <img src="rephoto/capacite.png" alt="Capacité" class="project-screenshot">
+          <img src="rephoto/selecteur_classe.png" alt="Sélécteur de classe" class="project-screenshot">
+          <img src="rephoto/bloc_empire.png" alt="Bloc de l'empire" class="project-screenshot">
+        </dd>
+      </dl>
+    </article>
+
+<!-- Projet 7 -->
+     <article class="project-card" style="background-image: url('rephoto/chambre.jpeg');">
+      <h2 class="project-title">Mod Minecraft - Animation</h2>
+      <p class="project-desc">Projet perso de mod Minecraft.</p>
+      <dl class="project-structure">
+        <dt>🎯 Objectif</dt>
+        <dd>Développer la partie graphique de mon Mod minecraft.</dd>
+        <dt>🛠️ Action</dt>
+        <dd>
+          <ul>
+            <li>Animation 3D.</li>
+            <li>Modèle 3D d'items.</li>
+            <li>Modèle 3D d'armures.</li>
+            <li>Modèle 3D d'entités.</li>
+          </ul>
+        </dd>
+        <dt>💻 Technos utilisées</dt>
+        <dd>BlockBench et MCreator</dd>
+        <dt>📸 Aperçu + Lien</dt>
+        <dd>
+          <a href="doc/fallen_kingdom_mod_quentin-1.0.0-neoforge-1.21.4.jar" target="_blank">🔗 Lien de téléchargement du mod</a>
+          <br><br><br><br><br>
+          <div class="video-group">
+          <video src="rephoto/modeleboss.mp4" autoplay muted loop playsinline class="project-video"></video>
+          <video src="rephoto/anim.mp4" autoplay muted loop playsinline class="project-video"></video>
+  </div>
+        </dd>
+      </dl>
+    </article>
+
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      <p>&copy; Portfolio de GALES Quentin</p>
+      <div class="social-icons">
+        <a href="https://github.com/QuentinGales" target="_blank" aria-label="GitHub">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub">
+        </a>
+        <a href="https://linkedin.com/in/quentin-gales" target="_blank" aria-label="LinkedIn">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn">
+        </a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
