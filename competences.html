@@ -8,152 +8,271 @@
 </head>
 <body class="top">
   <nav>
-    <ul>
-      <li><a href="index.html">Accueil</a></li>
-      <li><a href="competences.html">Mes compétences</a></li>
-      <li><a href="projets.html">Mes projets</a></li>
-      <li><a href="about.html">À propos</a></li>
-      <li><a href="doc/cv.pdf" class="cv-button" target="_blank">📄 Télécharger mon CV</a></li>      
-    </ul>
-  </nav>
+  <ul>
+    <li><a href="index.html">Accueil</a></li>
+    <li><a href="competences.html">Mes compétences</a></li>
+    <li><a href="projets.html">Mes projets</a></li>
+    <li><a href="about.html">À propos</a></li>
+    <li><a href="experience.html">Expérience professionnelle</a></li>
+    <li><a href="doc/cv.pdf" class="cv-button" target="_blank">📄 Télécharger mon CV</a></li>
+  </ul>
+</nav>
 
-  <!-- SECTION COMPÉTENCES EN DEHORS DU MAIN -->
   <section id="competences">
+    <svg class="vg-brush-title" viewBox="0 0 800 150" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle">Mes compétences</text>
+    </svg>
 
-    <svg class="vg-brush-title" viewBox="0 0 800 150" xmlns="http://www.w3.org/2000/svg">
-  <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle">
-    Mes compétences
-  </text>
-</svg>
-    
+    <p class="skills-intro">
+      Cette page regroupe mes compétences techniques et humaines. Chaque bloc peut être déplié pour voir
+      les outils maîtrisés, mon niveau et les projets concrets dans lesquels j’ai mobilisé ces compétences.
+    </p>
+
     <ul class="skills-list">
-      <li class="skill-item" data-level="90">
-        <button class="skill-btn">Configuration d'équipement réseaux</button>
+      <li class="skill-item" id="skill-reseau" data-level="92">
+        <button class="skill-btn" aria-expanded="false">
+          <span class="skill-btn-text">
+            <span class="skill-name">Infrastructure réseau & configuration Cisco</span>
+            <span class="skill-subtitle">VLAN, inter-VLAN, DHCP, DNS, ACL, redondance</span>
+          </span>
+          <span class="skill-btn-icon">⌄</span>
+        </button>
+        <div class="skill-bar"><div class="skill-fill"></div></div>
+        <div class="skill-detail">
+          <h4>Ce que je sais faire</h4>
+          <p>
+            Durant mon BUT Réseaux & Télécommunications, j’ai appris à concevoir un plan d’adressage,
+            segmenter un réseau, configurer des switchs et routeurs Cisco, puis valider le fonctionnement global.
+          </p>
+          <ul>
+            <li>Création de VLAN et routage inter-VLAN</li>
+            <li>Configuration DHCP, DNS, NAT et ACL</li>
+            <li>Tests de connectivité, filtrage et diagnostic</li>
+          </ul>
+          <div class="skill-projects">
+            <a class="skill-project-link" href="projets.html#projet-sae21">Voir SAE 21</a>
+            <a class="skill-project-link" href="projets.html#projet-multisite">Voir Réseau multisite</a>
+          </div>
+        </div>
+      </li>
+
+      <li class="skill-item" id="skill-packettracer" data-level="88">
+        <button class="skill-btn" aria-expanded="false">
+          <span class="skill-btn-text">
+            <span class="skill-name">Simulation réseau avec Packet Tracer</span>
+            <span class="skill-subtitle">Modélisation, validation et tests avant déploiement</span>
+          </span>
+          <span class="skill-btn-icon">⌄</span>
+        </button>
+        <div class="skill-bar"><div class="skill-fill"></div></div>
+        <div class="skill-detail">
+          <h4>Mise en pratique</h4>
+          <p>
+            J’utilise Packet Tracer pour préparer mes topologies, tester les flux entre équipements et corriger les erreurs avant mise en production.
+          </p>
+          <div class="skill-projects">
+            <a class="skill-project-link" href="projets.html#projet-sae21">Voir SAE 21</a>
+            <a class="skill-project-link" href="projets.html#projet-multisite">Voir Réseau multisite</a>
+          </div>
+        </div>
+      </li>
+
+      <li class="skill-item" id="skill-cyber" data-level="90">
+        <button class="skill-btn" aria-expanded="false">
+          <span class="skill-btn-text">
+            <span class="skill-name">Cybersécurité</span>
+            <span class="skill-subtitle">Firewall ASA, ACL, hygiène numérique et sécurisation</span>
+          </span>
+          <span class="skill-btn-icon">⌄</span>
+        </button>
+        <div class="skill-bar"><div class="skill-fill"></div></div>
+        <div class="skill-detail">
+          <h4>Approche sécurité</h4>
+          <p>
+            Pour moi, un réseau doit être performant mais surtout protégé. J’ai travaillé sur le filtrage,
+            la réduction de surface d’exposition et la sensibilisation aux bonnes pratiques numériques.
+          </p>
+          <ul>
+            <li>Configuration de règles de sécurité et filtrage</li>
+            <li>Utilisation d’ACL et de pare-feu Cisco ASA</li>
+            <li>Réflexes de protection des données et des accès</li>
+          </ul>
+          <div class="skill-projects">
+            <a class="skill-project-link" href="projets.html#projet-sae21">Voir SAE 21</a>
+            <a class="skill-project-link" href="projets.html#projet-apps">Voir Applications communicantes</a>
+            <a class="skill-project-link" href="projets.html#projet-garage">Voir site garagiste</a>
+          </div>
+        </div>
+      </li>
+
+      <li class="skill-item" id="skill-dev" data-level="91">
+        <button class="skill-btn" aria-expanded="false">
+          <span class="skill-btn-text">
+            <span class="skill-name">Développement web & programmation</span>
+            <span class="skill-subtitle">HTML, CSS, JavaScript, PHP, SQL, Python, Java</span>
+          </span>
+          <span class="skill-btn-icon">⌄</span>
+        </button>
+        <div class="skill-bar"><div class="skill-fill"></div></div>
+        <div class="skill-detail">
+          <p>J’ai conçu plusieurs projets personnels et académiques qui m’ont permis de développer une vraie polyvalence en développement.</p>
+          <ul>
+            <li><img class="skill-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" /> HTML5 / CSS3 / JavaScript</li>
+            <li><img class="skill-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP" /> PHP et intégration web</li>
+            <li><img class="skill-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" /> Python pour scripting, audio et automatisation</li>
+            <li><img class="skill-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" /> Java pour application, API et projet Minecraft</li>
+            <li><img class="skill-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="SQL" /> SQL / bases de données</li>
+          </ul>
+          <div class="skill-projects">
+            <a class="skill-project-link" href="projets.html#projet-portfolio">Voir Portfolio</a>
+            <a class="skill-project-link" href="projets.html#projet-apps">Voir Applications communicantes</a>
+            <a class="skill-project-link" href="projets.html#projet-audio">Voir Transmission audio</a>
+            <a class="skill-project-link" href="projets.html#projet-garage">Voir site garagiste</a>
+          </div>
+        </div>
+      </li>
+
+      <li class="skill-item" id="skill-bdd" data-level="84">
+        <button class="skill-btn" aria-expanded="false">
+          <span class="skill-btn-text">
+            <span class="skill-name">Bases de données</span>
+            <span class="skill-subtitle">Stockage, requêtes SQL, structuration des informations</span>
+          </span>
+          <span class="skill-btn-icon">⌄</span>
+        </button>
         <div class="skill-bar"><div class="skill-fill"></div></div>
         <div class="skill-detail">
           <p>
-    Tout au long de mon année de BUT, j’ai appris à configurer différents équipements réseau. 
-    Nous avons réalisé de nombreux projets et travaux pratiques pour simuler le réseau d’une petite entreprise. 
-    Pour répondre à ces besoins, j’ai dû :
-  </p>
-<strong>Concevoir le réseau :</strong>
-  <ul>
-        <li>Définir les sous-réseaux</li>
-        <li>Attribuer les adresses IP appropriées</li>
+            J’ai appris à concevoir des structures de données simples et efficaces pour stocker, retrouver et exploiter des informations côté application.
+          </p>
+          <div class="skill-projects">
+            <a class="skill-project-link" href="projets.html#projet-apps">Voir Applications communicantes</a>
+            <a class="skill-project-link" href="projets.html#projet-garage">Voir site garagiste</a>
+          </div>
+        </div>
+      </li>
+
+      <li class="skill-item" id="skill-telecom" data-level="82">
+        <button class="skill-btn" aria-expanded="false">
+          <span class="skill-btn-text">
+            <span class="skill-name">Télécommunications</span>
+            <span class="skill-subtitle">Signal, téléphonie, chaîne de transmission et protocoles</span>
+          </span>
+          <span class="skill-btn-icon">⌄</span>
+        </button>
+        <div class="skill-bar"><div class="skill-fill"></div></div>
+        <div class="skill-detail">
+          <p>
+            Cette partie de ma formation m’a permis de mieux comprendre le passage du signal à la transmission,
+            ainsi que la logique derrière les systèmes de téléphonie et les flux multimédias.
+          </p>
+          <div class="skill-projects">
+            <a class="skill-project-link" href="projets.html#projet-audio">Voir Système de transmission audio</a>
+          </div>
+        </div>
+      </li>
+
+      <li class="skill-item" id="skill-analyse" data-level="83">
+        <button class="skill-btn" aria-expanded="false">
+          <span class="skill-btn-text">
+            <span class="skill-name">Analyse & résolution de problèmes</span>
+            <span class="skill-subtitle">Diagnostic, logique, méthode et correction</span>
+          </span>
+          <span class="skill-btn-icon">⌄</span>
+        </button>
+        <div class="skill-bar"><div class="skill-fill"></div></div>
+        <div class="skill-detail">
+          <p>
+            Que ce soit en réseau, en développement ou en dépannage, j’aime comprendre précisément l’origine d’un problème avant de proposer une solution claire et fiable.
+          </p>
+          <div class="skill-projects">
+            <a class="skill-project-link" href="projets.html#projet-multisite">Voir Réseau multisite</a>
+            <a class="skill-project-link" href="projets.html#projet-garage">Voir site garagiste</a>
+          </div>
+        </div>
+      </li>
+
+      <li class="skill-item" id="skill-organisation" data-level="86">
+        <button class="skill-btn" aria-expanded="false">
+          <span class="skill-btn-text">
+            <span class="skill-name">Organisation</span>
+            <span class="skill-subtitle">Planification, suivi de tâches et rigueur</span>
+          </span>
+          <span class="skill-btn-icon">⌄</span>
+        </button>
+        <div class="skill-bar"><div class="skill-fill"></div></div>
+        <div class="skill-detail">
+          <p>
+            Sur les projets en équipe, je sais structurer les tâches, garder une vision d’ensemble et avancer avec méthode pour respecter les délais.
+          </p>
+          <div class="skill-projects">
+            <a class="skill-project-link" href="projets.html#projet-apps">Voir Applications communicantes</a>
+            <a class="skill-project-link" href="projets.html#projet-portfolio">Voir Portfolio</a>
+          </div>
+        </div>
+      </li>
+
+      <li class="skill-item" id="skill-autonomie" data-level="89">
+        <button class="skill-btn" aria-expanded="false">
+          <span class="skill-btn-text">
+            <span class="skill-name">Autonomie</span>
+            <span class="skill-subtitle">Apprentissage rapide, recherche et montée en compétence</span>
+          </span>
+          <span class="skill-btn-icon">⌄</span>
+        </button>
+        <div class="skill-bar"><div class="skill-fill"></div></div>
+        <div class="skill-detail">
+          <p>
+            J’aime explorer de nouvelles technologies par moi-même, tester, documenter et progresser rapidement, notamment sur des projets personnels comme Minecraft ou le web.
+          </p>
+          <div class="skill-projects">
+            <a class="skill-project-link" href="projets.html#projet-mod-code">Voir Mod Minecraft - Code</a>
+            <a class="skill-project-link" href="projets.html#projet-mod-anim">Voir Mod Minecraft - Animation</a>
+          </div>
+        </div>
+      </li>
+
+      <li class="skill-item" id="skill-communication" data-level="85">
+        <button class="skill-btn" aria-expanded="false">
+          <span class="skill-btn-text">
+            <span class="skill-name">Communication claire</span>
+            <span class="skill-subtitle">Présentation, vulgarisation et travail avec le client</span>
+          </span>
+          <span class="skill-btn-icon">⌄</span>
+        </button>
+        <div class="skill-bar"><div class="skill-fill"></div></div>
+        <div class="skill-detail">
+          <p>
+            J’accorde beaucoup d’importance à la manière d’expliquer un projet, présenter une solution ou échanger avec un besoin métier. Un bon résultat doit aussi être compréhensible.
+          </p>
+          <div class="skill-projects">
+            <a class="skill-project-link" href="projets.html#projet-portfolio">Voir Portfolio</a>
+            <a class="skill-project-link" href="projets.html#projet-garage">Voir site garagiste</a>
+          </div>
+        </div>
+      </li>
+
+      <li class="skill-item" id="skill-equipe" data-level="87">
+        <button class="skill-btn" aria-expanded="false">
+          <span class="skill-btn-text">
+            <span class="skill-name">Travail d’équipe</span>
+            <span class="skill-subtitle">Coordination, adaptation et efficacité collective</span>
+          </span>
+          <span class="skill-btn-icon">⌄</span>
+        </button>
+        <div class="skill-bar"><div class="skill-fill"></div></div>
+        <div class="skill-detail">
+          <p>
+            Les projets de SAE m’ont appris à répartir le travail, m’adapter aux imprévus et garder une dynamique collective même quand l’équipe change en cours de route.
+          </p>
+          <div class="skill-projects">
+            <a class="skill-project-link" href="projets.html#projet-apps">Voir Applications communicantes</a>
+            <a class="skill-project-link" href="projets.html#projet-multisite">Voir Réseau multisite</a>
+          </div>
+        </div>
+      </li>
     </ul>
-<strong>Configurer les équipements :</strong>
-    <ul>
-        <li>Switchs Cisco : paramétrage des VLANs et STP</li>
-        <li>Routeurs Cisco : routage inter-VLAN, NAT, DHCP et DNS</li>
-        <li>Appliquer des ACLs</li>
-  </ul>
-  <p>
-    <strong>Résultat :</strong>  
-    Le projet <em>SAE21</em> témoigne de cette maîtrise (télécharger le fichier : SAE21).
-  </p>
-        </div>
-      </li>
-      <li class="skill-item" data-level="85">
-        <button class="skill-btn">Utilisation de Packet Tracer</button>
-        <div class="skill-bar"><div class="skill-fill"></div></div>
-        <div class="skill-detail">
-            <div class="car-item">
-    <h4>Découverte</h4>
-    <p>Depuis le début de l’année, j’utilise le logiciel Cisco Packet Tracer pour m’entraîner sur mes travaux pratiques et mes projets réseau, afin de simuler des architectures, tester des configurations et comprendre le comportement des équipements avant déploiement.</p>
-  </div>
-  <div class="car-item">
-    <h4>Mise en pratique</h4>
-    <p>J’ai conçu, configuré et validé plusieurs topologies réseau (VLAN, routage inter-VLAN, OSPF, ACL…) en utilisant Packet Tracer, en suivant méthodiquement les exercices de TP et en adaptant les scénarios à mes besoins métier pour renforcer ma compréhension des protocoles et des bonnes pratiques.</p>
-  </div>
-  <div class="car-item">
-    <h4>Résultat</h4>
-    <p>Grâce à cette maîtrise, j’ai pu mener à bien le projet <strong>SAE21</strong>, où j’ai modélisé et testé l’ensemble de l’infrastructure réseau avant mise en production, garantissant la fiabilité et la performance de la solution.</p>
-  </div>
-        </div>
-      </li>
-
-<li class="skill-item" data-level="95">
-        <button class="skill-btn">Cybersécurité</button>
-        <div class="skill-bar"><div class="skill-fill"></div></div>
-        <div class="skill-detail">
-            <div class="car-item">
-    <h4>Découverte</h4>
-    <p>Si un réseau ne dispose pas d'une sécurité assez forte, il ne sert à <strong>RIEN</strong>. C'est pourquoi il est important d'avoir de fortes notions de cybersécurité quand nous sommes des administrateurs ou architectes réseaux.</p>
-  <div class="car-item">
-    <h4>Mise en pratique</h4>
-    <p>Configuration d'ASA, le parfeu cisco et implémentation d'ACL.</p> <img src="rephoto/firewall-32.svg" class="asa-icon"> <p>Prévention des dangers de la diffusion de la vie privée sur internet (SAE13)</p>
-</p>
-  </div>
-  
-        </div>
-      </li>
-  
-      <li class="skill-item" data-level="95">
-  <button class="skill-btn">Programmation</button>
-  <div class="skill-bar"><div class="skill-fill"></div></div>
-  <div class="skill-detail">
-    <p>J'ai dû concevoir de nombreux sites et systèmes tout au long de ma vie, ce qui m'a permis d'acquérir de solides compétences en :</p>
-    <ul>
-      <li>
-        <img class="skill-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP icon" width="24" height="24" />
-        PHP + SQLite
-      </li>
-      <li>
-        <img class="skill-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" alt="C# icon" width="24" height="24" />
-        C#
-      </li>
-      <li>
-        <img class="skill-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5 icon" width="24" height="24" />
-        HTML5/CSS3
-      </li>
-      <li>
-        <img class="skill-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript icon" width="24" height="24" />
-        JavaScript
-      </li>
-      <li>
-        <img class="skill-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python icon" width="24" height="24" />
-        Python
-      </li>
-    </ul>
-  </div>
-</li>
-
-      <!-- … autres compétences … -->
-<li class="skill-item" data-level="82">
-        <button class="skill-btn">Télécommunication</button>
-        <div class="skill-bar"><div class="skill-fill"></div></div>
-        <div class="skill-detail">
-            <div class="car-item">
-    <h4>Découverte</h4>
-    <p>Je me suis toujours demandé comment fonctionnait les téléphonnes. Comment passe-t-on d'un signal analogique à un signal éléctrique ? Les cours de cette année m'ont beaucoup apporté à ce sujet.</p>
-  </div>
-  <div class="car-item">
-    <h4>Mise en pratique</h4>
-    <p>J'ai configuré plusiseurs serveurs de téléphonies, notamment des serveurs SIP, lors des TPs de téléphonie de cette année. <br>J'ai réalisé un serveur privé de téléphonie (PABx) afin de simuler un cas de figure d'entreprise. </p>
-  </div>
-  
-        </div>
-      </li>
-
-
-<li class="skill-item" data-level="87">
-        <button class="skill-btn">Travail d'équipe</button>
-        <div class="skill-bar"><div class="skill-fill"></div></div>
-        <div class="skill-detail">
-            <div class="car-item">
-    <h4>Découverte</h4>
-    <p>Lors de ma L1, j'ai dû réaliser de nombreux projets. Le projet en SAE 24 était prévu pour 5 étudiants, malheureusement à cause d'un abandon, mon équipe ne disposait que de 4 étudiants. Nous avons donc dû avoir un bon travail d'équipe pour mener à bien le projet.</p>
-  </div>
-  <div class="car-item">
-    <h4>Mise en pratique</h4>
-    <p>Nous avons donc dû être organisés dans nos tâches et établir un chef de groupe. J'ai créé un GANTT et un RACI afin de pouvoir travailler dans les temps en rattrapant les retards. Le résultat se trouve dans la section <a href= "projets.html">projet</a>.</p>
-  </div>
-  
-        </div>
-      </li>
   </section>
-
-
 
   <footer>
     <div class="footer-content">
@@ -173,6 +292,8 @@
     document.querySelectorAll('.skill-btn').forEach(btn => {
       btn.addEventListener('click', () => {
         const detail = btn.parentElement.querySelector('.skill-detail');
+        const expanded = btn.getAttribute('aria-expanded') === 'true';
+        btn.setAttribute('aria-expanded', String(!expanded));
         detail.classList.toggle('open');
       });
     });
@@ -187,10 +308,7 @@
       });
     }, { threshold: 0.3 });
 
-    document.querySelectorAll('.skill-item').forEach(item => {
-      observer.observe(item);
-    });
+    document.querySelectorAll('.skill-item').forEach(item => observer.observe(item));
   </script>
-  
 </body>
 </html>

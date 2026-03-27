@@ -1,184 +1,119 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="portfoliocss.css">
-        <title>Portfolio : À propos</title>
-    </head>
-    <style>
-/* SECTION GÉNÉRALE */
-.about-section {
-  padding: 6rem 2rem 4rem;
-  background: linear-gradient(135deg, #466ff3, #4a92f7);
-  min-height: 100vh;
-}
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="portfoliocss.css">
+  <title>Portfolio : À propos</title>
+</head>
+<body class="top">
+  <nav>
+    <ul>
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="competences.html">Mes compétences</a></li>
+      <li><a href="projets.html">Mes projets</a></li>
+      <li><a href="about.html">À propos</a></li>
+      <li><a href="experience.html">Expérience professionnelle</a></li>
+      <li><a href="doc/cv.pdf" class="cv-button" target="_blank">📄 Télécharger mon CV</a></li>
+    </ul>
+  </nav>
 
-/* TITRE PRINCIPAL */
-.about-section h2 {
-  text-align: center;
-  color: white;
-  font-size: 3rem;
-  margin-bottom: 3rem;
-  text-shadow: 2px 2px 6px #00000060;
-  animation: fadeIn 2s ease-out;
-}
+  <main class="about-page">
+    <svg class="vg-brush-title" viewBox="0 0 800 150" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle">À propos de moi</text>
+    </svg>
 
-/* CARTES CLÉS */
-.about-cards {
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-  flex-wrap: wrap;
-  margin-bottom: 4rem;
-}
+    <section class="about-hero">
+      <div class="about-photo-card">
+        <img src="rephoto/tetequentin.jpg" alt="Photo de Quentin Gales">
+      </div>
 
-.card {
-  background: rgba(255, 255, 255, 0.08);
-  padding: 2rem;
-  border-radius: 1rem;
-  width: 280px;
-  box-shadow: 0 6px 12px rgba(0,0,0,0.3);
-  text-align: center;
-  color: #fff;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  backdrop-filter: blur(6px);
-  border: 1px solid rgba(255,255,255,0.1);
-}
+      <div class="about-panel">
+        <h1>Quentin Gales</h1>
+        <p class="lead">
+          Étudiant en BUT Réseaux & Télécommunications, passionné par l’informatique, les réseaux,
+          la cybersécurité et les projets concrets qui relient la technique à un vrai besoin utilisateur.
+        </p>
 
-.card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 12px 20px rgba(0,0,0,0.5);
-}
+        <div class="about-tags">
+          <span class="about-tag">BUT Réseaux & Télécommunications</span>
+          <span class="about-tag">Université Côte d’Azur</span>
+          <span class="about-tag">Réseaux</span>
+          <span class="about-tag">Cybersécurité</span>
+          <span class="about-tag">Développement web</span>
+        </div>
 
-.card-icon {
-  font-size: 2.5rem;
-  margin-bottom: 0.8rem;
-}
+        <div class="about-links">
+          <a class="about-link" href="projets.html">Voir mes projets</a>
+          <a class="about-link" href="competences.html">Voir mes compétences</a>
+        </div>
+      </div>
+    </section>
 
-/* BIO DÉTAILLÉE */
-.about-details {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 0 1rem;
-  text-align: justify;
-  line-height: 1.8;
-  color: #f2f2f2;
-  font-size: 1.2rem;
-  background: rgba(255, 255, 255, 0.06);
-  padding: 2rem;
-  border-radius: 1rem;
-  box-shadow: 0 6px 12px rgba(0,0,0,0.3);
-  backdrop-filter: blur(4px);
-  animation: fadeInUp 1.5s ease;
-}
+    <section class="about-grid">
+      <div class="timeline-card">
+        <h2 class="about-section-title">Mon parcours</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <strong>2024 — Bac général Mathématiques & Physique</strong>
+            <p>Cette formation m’a apporté de la rigueur, une méthode de raisonnement solide et une vraie appétence pour les matières techniques.</p>
+          </div>
 
-/* PHOTO DE PROFIL */
-.pdp-wrapper {
-  position: absolute;
-  top: 120px;
-  right: 100px;
-  width: 160px;
-  height: 160px;
-  z-index: 10;
-  border-radius: 50%;
-  overflow: hidden;
-  box-shadow: 0 0 20px rgba(255,255,255,0.3);
-}
+          <div class="timeline-item">
+            <strong>2024 – 2027 — BUT Réseaux & Télécommunications</strong>
+            <p>À l’IUT Nice Côte d’Azur, je développe mes compétences en architecture réseau, sécurité, télécommunications et développement d’outils utiles.</p>
+          </div>
 
-.pdp-placeholder {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 50%;
-  border: 3px solid #ffffff40;
-  transition: transform 0.4s ease;
-}
+          <div class="timeline-item">
+            <strong>Alternance Crédit Agricole 2025-2027</strong>
+            <p>Cette alternance me permet d’appliquer mes acquis en environnement professionnel, de gagner en maturité technique et de mieux comprendre les enjeux d’exploitation et de sécurité.</p>
+          </div>
+        </div>
+      </div>
 
-.pdp-placeholder:hover {
-  transform: scale(1.05);
-}
-
-/* ANIMATIONS */
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(-20px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-@keyframes fadeInUp {
-  from { opacity: 0; transform: translateY(40px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-/* RESPONSIVE */
-@media (max-width: 800px) {
-  .pdp-wrapper {
-    position: static;
-    margin: 0 auto 2rem;
-  }
-  .about-section h2 {
-    margin-top: 2rem;
-  }
-}
-</style>
-
-
-    <body class="top">
-        <nav>
-            <ul>
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="competences.html">Mes compétences</a></li>
-                <li><a href="projets.html">Mes projets</a></li>
-                <li><a href="about.html">À propos</a></li>
-                <li><a href="doc/cv.pdf" class="cv-button" target="_blank">📄 Télécharger mon CV</a></li>
-            </ul>
-        </nav>
-        <div class="pdp-wrapper">
-                <img src="rephoto/tetequentin.jpg" alt="Photo de Quentin" class="pdp-placeholder" />
-            </div>
-        <section id="about-qa" class="about-section">
-            <svg class="vg-brush-title" viewBox="0 0 800 150" xmlns="http://www.w3.org/2000/svg">
-  <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle">
-    À propos de moi
-  </text>
-</svg>
-            <!-- Cartes clés -->
-            <main class="about-cards">
-                <div class="card">
-                    <div class="card-icon">🎓</div>
-                    <h3>2024 – Bac Math & Physique</h3>
-                    <p>Diplômé au Lycée des Eucalyptus avec mention Bien, j’ai acquis rigueur et sens de l’analyse.</p>
-                </div>
-                <div class="card">
-                    <div class="card-icon">🎯</div>
-                    <h3>2024–2027 – BUT Réseaux & Télécommunications</h3>
-                    <p>Actuellement en deuxième année à l’IUT Nice Côte d’Azur, je me spécialise en infrastructures réseaux et sécurité.</p>
-                </div>
-                <div class="card">
-                    <div class="card-icon">🚀</div>
-                    <h3>Objectif Alternance</h3>
-                    <p>Début juillet 2025 j'ai eu la chance de pouvoir signer un contrat de 2 ans d'apprentissage au : Crédit Agricole</p>
-                </div>
-            </main>
-            <!-- Biographie plus détaillée -->
-            <article class="about-details">
-                <p>Passionné par l’informatique depuis mon plus jeune âge, je suis constamment à la recherche de nouvelles technologies à découvrir. Mes études en mathématiques et physique m’ont donné une base solide pour comprendre les principes fondamentaux des réseaux et de la cybersécurité.</p>
-                <p>Curieux et méthodique, j’aime résoudre des problèmes complexes et travailler en équipe. Mon projet à court terme est de mettre mes compétences en pratique au sein d’une entreprise innovante, où je pourrais contribuer à sécuriser et optimiser les infrastructures réseau.</p>
-                <p>En dehors des cours, je participe à des ateliers et meetups tech pour échanger avec des professionnels et étoffer mon réseau. Autonome et persévérant, je suis prêt à relever les défis que vous me proposerez.</p>
-            </article>
+      <div class="about-columns">
+        <section class="values-card">
+          <h2 class="about-section-title">Ce qui me caractérise</h2>
+          <p>
+            Je suis curieux, investi et très attiré par les environnements où il faut comprendre comment les systèmes communiquent,
+            pourquoi ils tombent en panne et comment les rendre plus fiables. J’aime autant la partie réseau que la logique applicative.
+          </p>
+          <div class="about-values">
+            <span class="value-pill">Curiosité</span>
+            <span class="value-pill">Autonomie</span>
+            <span class="value-pill">Organisation</span>
+            <span class="value-pill">Esprit d’analyse</span>
+            <span class="value-pill">Travail d’équipe</span>
+          </div>
         </section>
-        <footer>
-            <div class="footer-content">
-                <p>&copy; Portfolio de GALES Quentin</p>
-                <div class="social-icons">
-                    <a href="https://github.com/QuentinGales" target="_blank" aria-label="GitHub">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" />
-                    </a>
-                    <a href="https://linkedin.com/in/quentin-gales" target="_blank" aria-label="LinkedIn">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn" />
-                    </a>
-                </div>
-            </div>
-        </footer>
-    </body>
+
+        <section class="focus-card">
+          <h2 class="about-section-title">Aujourd’hui</h2>
+          <p>
+            Mon objectif est de continuer à progresser sur des projets mêlant infrastructure, sécurité et développement.
+            J’aime créer des solutions concrètes, que ce soit un projet académique, un site web ou un outil plus technique.
+          </p>
+          <p>
+            Ce portfolio reflète cette approche : montrer ce que je sais faire, mais aussi la manière dont je travaille,
+            avec sérieux, méthode et envie d’apprendre.
+          </p>
+        </section>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <p>&copy; Portfolio de GALES Quentin</p>
+      <div class="social-icons">
+        <a href="https://github.com/QuentinGales" target="_blank" aria-label="GitHub">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" />
+        </a>
+        <a href="https://linkedin.com/in/quentin-gales" target="_blank" aria-label="LinkedIn">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn" />
+        </a>
+      </div>
+    </div>
+  </footer>
+</body>
 </html>

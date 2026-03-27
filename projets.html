@@ -5,198 +5,374 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="portfoliocss.css">
   <title>Portfolio : Mes projets</title>
-
 </head>
 <body class="top">
   <nav>
-    <ul>
-      <li><a href="index.html">Accueil</a></li>
-      <li><a href="competences.html">Mes compétences</a></li>
-      <li><a href="projets.html">Mes projets</a></li>
-      <li><a href="about.html">À propos</a></li>
-      <li><a href="doc/cv.pdf" class="cv-button" target="_blank">📄 Télécharger mon CV</a></li>
-    </ul>
-  </nav>
+  <ul>
+    <li><a href="index.html">Accueil</a></li>
+    <li><a href="competences.html">Mes compétences</a></li>
+    <li><a href="projets.html">Mes projets</a></li>
+    <li><a href="about.html">À propos</a></li>
+    <li><a href="experience.html">Expérience professionnelle</a></li>
+    <li><a href="doc/cv.pdf" class="cv-button" target="_blank">📄 Télécharger mon CV</a></li>
+  </ul>
+</nav>
 
   <section id="projects">
-    <!-- Projet 1 -->
-    <article class="project-card" style="background-image: url('rephoto/terrasse.jpg');">
-      <h2 class="project-title">SAE 21</h2>
-      <p class="project-desc">Simuler un réseau privé d'une entreprise sur Packet Tracer</p>
+    <article class="project-card" id="projet-sae21" style="background-image: url('rephoto/terrasse.jpg');">
+      <h2 class="project-title">SAE 21 — Réseau d’entreprise simulé</h2>
+      <p class="project-desc">Simulation complète d’un réseau privé d’entreprise sur Packet Tracer.</p>
       <dl class="project-structure">
-        <dt>🎯 Objectif / Problème à résoudre</dt>
-        <dd>Appliquer toutes les règles de sécurité et faire communiquer les bonnes machines.</dd>
-        <dt>🛠️ Action</dt>
+        <dt>🎯 Objectif</dt>
+        <dd>Créer une architecture réseau cohérente, sécurisée et fonctionnelle pour faire communiquer les bons équipements tout en respectant les contraintes de segmentation.</dd>
+        <dt>🛠️ Travail réalisé</dt>
         <dd>
           <ul>
-            <li>Créer le bon plan d'adressage IP.</li>
-            <li>Créer le réseau.</li>
-            <li>Configurer le Firewall.</li>
+            <li>Conception du plan d’adressage IP</li>
+            <li>Création des VLAN et du routage inter-VLAN</li>
+            <li>Configuration des services et des règles de sécurité</li>
           </ul>
         </dd>
-        <dt>💻 Technos utilisées</dt>
-        <dd>Packet Tracer, CISCO, SWITCHS, ROUTEURS, VLANs, DHCP, DNS, STP et Firewall</dd>
-        <dt>📅 Lien de téléchargement :</dt>
-        <dd><a href="doc/projet21.pkt" download>📂 Télécharger le fichier .pkt</a></dd>
+        <dt>💻 Compétences mobilisées</dt>
+        <dd class="project-skills">
+          <a class="project-skill-link" href="competences.html#skill-reseau">Infrastructure réseau</a>
+          <a class="project-skill-link" href="competences.html#skill-packettracer">Packet Tracer</a>
+          <a class="project-skill-link" href="competences.html#skill-cyber">Cybersécurité</a>
+        </dd>
+        <dt>📎 Ressources</dt>
+        <dd class="project-meta">
+          <a class="project-doc-link" href="doc/projet21.pkt" download>📂 Télécharger le fichier</a>
+        </dd>
       </dl>
     </article>
 
-    <!-- Projet 2 -->
-    <article class="project-card" style="background-image: url('rephoto/fleurvg.jpg');">
-      <h2 class="project-title">SAE 23 et 24</h2>
-      <p class="project-desc">Créer un banc avionique intelligent pour Thales (photo, site web, communication réseau)</p>
+    <article class="project-card" id="projet-thales" style="background-image: url('rephoto/fleurvg.jpg');">
+      <h2 class="project-title">SAE 23 / 24 — Banc avionique intelligent</h2>
+      <p class="project-desc">Projet académique mêlant web, capteurs, réseau local et logique embarquée.</p>
       <dl class="project-structure">
-        <dt>🎯 Objectif / Problème à résoudre</dt>
-        <dd>Site web sécurisé + système de capture avec Raspberry Pi + LED déclenchée selon la lumière.</dd>
-        <dt>🛠️ Action</dt>
+        <dt>🎯 Objectif</dt>
+        <dd>Créer un système capable de capturer, stocker et exploiter des informations techniques via un site sécurisé et une chaîne de communication locale.</dd>
+        <dt>🛠️ Travail réalisé</dt>
         <dd>
           <ul>
-            <li>Créer le site web en PHP + SQLite.</li>
-            <li>Configurer le Raspberry Pi 3 pour la capture et l’hébergement.</li>
-            <li>Établir un réseau local privé entre Pi et PICO.</li>
+            <li>Développement d’un site web en PHP / SQLite</li>
+            <li>Configuration d’un Raspberry Pi pour l’hébergement et la capture</li>
+            <li>Organisation du réseau local entre les différents modules</li>
           </ul>
         </dd>
-        <dt>💻 Technos utilisées</dt>
-        <dd>PHP, HTML5, CSS3, SQLite, BASH et Python</dd>
-        <dt>📸 Aperçu visuel</dt>
+        <dt>💻 Compétences mobilisées</dt>
+        <dd class="project-skills">
+          <a class="project-skill-link" href="competences.html#skill-dev">Développement</a>
+          <a class="project-skill-link" href="competences.html#skill-bdd">Bases de données</a>
+          <a class="project-skill-link" href="competences.html#skill-equipe">Travail d’équipe</a>
+        </dd>
+        <dt>📸 Aperçu</dt>
         <dd><img src="rephoto/projetthales.png" alt="Projet Thales" class="project-screenshot"></dd>
       </dl>
     </article>
 
-    <!-- Projet 3 -->
-    <article class="project-card" style="background-image: url('rephoto/arbrevg.jpg');">
+    <article class="project-card" id="projet-portfolio" style="background-image: url('rephoto/portrait.jpg');">
+      <h2 class="project-title">Portfolio personnel</h2>
+      <p class="project-desc">Création d’un site vitrine personnel pour présenter mon parcours, mes compétences et mes projets.</p>
+      <dl class="project-structure">
+        <dt>🎯 Objectif</dt>
+        <dd>Concevoir une vitrine professionnelle claire, agréable à parcourir et structurée pour mettre en avant mon profil dans le domaine de l’informatique et des réseaux.</dd>
+        <dt>🛠️ Travail réalisé</dt>
+        <dd>
+          <ul>
+            <li>Conception de la structure HTML et du style CSS</li>
+            <li>Travail sur la hiérarchie de l’information et l’ergonomie</li>
+            <li>Amélioration de la présentation des 
+              s et des compétences</li>
+          </ul>
+        </dd>
+        <dt>💻 Compétences mobilisées</dt>
+        <dd class="project-skills">
+          <a class="project-skill-link" href="competences.html#skill-dev">Développement</a>
+          <a class="project-skill-link" href="competences.html#skill-organisation">Organisation</a>
+          <a class="project-skill-link" href="competences.html#skill-communication">Communication claire</a>
+        </dd>
+        <dt>📎 Ressources</dt>
+        <dd class="project-meta">
+          <a class="project-link" href="index.html">🔗 Voir le portfolio</a>
+          <a class="project-doc-link" href="doc/projet4" target="_blank">📄 Document associé</a>
+        </dd>
+        <dt>📸 Aperçu</dt>
+        <dd><img src="rephoto/projet4.jpeg" alt="Aperçu du portfolio" class="project-screenshot"></dd>
+      </dl>
+    </article>
+
+    <article class="project-card" id="projet-gestion-taches" style="background-image: url('rephoto/arbrevg.jpg');">
       <h2 class="project-title">Gestionnaire de tâches</h2>
-      <p class="project-desc">Application perso pour créer et gérer des tâches avec contrainte visuelle.</p>
+      <p class="project-desc">Application personnelle de gestion de tâches avec progression visuelle.</p>
       <dl class="project-structure">
         <dt>🎯 Objectif</dt>
-        <dd>Créer, supprimer, mettre en pause des tâches avec animation de progression circulaire.</dd>
-        <dt>🛠️ Action</dt>
+        <dd>Créer une interface légère pour ajouter, suivre et visualiser des tâches avec un rendu graphique motivant.</dd>
+        <dt>🛠️ Travail réalisé</dt>
         <dd>
           <ul>
-            <li>Créer le site avec interface dynamique.</li>
-            <li>Utiliser les canvas CSS pour les cercles de progression colorés.</li>
+            <li>Création de l’interface HTML / CSS</li>
+            <li>Mise en avant des tâches avec progression circulaire</li>
+            <li>Travail sur le rendu visuel et la simplicité d’utilisation</li>
           </ul>
         </dd>
-        <dt>💻 Technos utilisées</dt>
-        <dd>HTML5, CSS3</dd>
-        <dt>📸 Aperçu + Lien</dt>
-        <dd>
-          <a href="https://tasks-sao.onrender.com" target="_blank">🔗 Lien vers le site</a>
-          <img src="rephoto/tasks.png" alt="Gestionnaire de tâches" class="project-screenshot">
+        <dt>💻 Compétences mobilisées</dt>
+        <dd class="project-skills">
+          <a class="project-skill-link" href="competences.html#skill-dev">Développement</a>
+          <a class="project-skill-link" href="competences.html#skill-analyse">Analyse</a>
         </dd>
+        <dt>📎 Ressources</dt>
+        <dd class="project-meta">
+          <a class="project-link" href="https://tasks-sao.onrender.com" target="_blank">🔗 Voir le site</a>
+        </dd>
+        <dt>📸 Aperçu</dt>
+        <dd><img src="rephoto/tasks.png" alt="Gestionnaire de tâches" class="project-screenshot"></dd>
       </dl>
     </article>
-    
-    <!-- Projet 4 -->
-     <article class="project-card" style="background-image: url('rephoto/portrait.jpg');">
-      <h2 class="project-title">Site HTML5/CSS3</h2>
-      <p class="project-desc">Petit projet pour apprendre les bases de HTML5 et CSS3.</p>
+
+    <article class="project-card" id="projet-site-html" style="background-image: url('rephoto/portrait.jpg');">
+      <h2 class="project-title">Site HTML / CSS sur mes passions</h2>
+      <p class="project-desc">Projet personnel d’apprentissage du front-end sans assistance IA.</p>
       <dl class="project-structure">
         <dt>🎯 Objectif</dt>
-        <dd>Coder un site internet uniquement avec HTML5 et CSS3 sans utilisation d'IA. Ce site met en avant mes passions, dont la musculation et la bioméchanique.</dd>
-        <dt>🛠️ Action</dt>
+        <dd>Créer un site simple, propre et dynamique pour présenter des centres d’intérêt comme la musculation et la biomécanique.</dd>
+        <dt>🛠️ Travail réalisé</dt>
         <dd>
           <ul>
-            <li>Créer le site avec interface dynamique.</li>
-            <li>Utilisation d'animations en CSS3</li>
+            <li>Intégration complète en HTML5 / CSS3</li>
+            <li>Création d’animations légères</li>
+            <li>Travail sur la mise en page et la navigation</li>
           </ul>
         </dd>
-        <dt>💻 Technos utilisées</dt>
-        <dd>HTML5, CSS3</dd>
-        <dt>📸 Aperçu + Lien</dt>
+        <dt>💻 Compétences mobilisées</dt>
+        <dd class="project-skills">
+          <a class="project-skill-link" href="competences.html#skill-dev">Développement</a>
+          <a class="project-skill-link" href="competences.html#skill-autonomie">Autonomie</a>
+        </dd>
+        <dt>📸 Aperçu</dt>
         <dd>
-          <a href="https://tasks-sao.onrender.com" target="_blank">🔗 Lien vers le site</a>
-          <img src="rephoto/muscu.png" alt="site muscu" class="project-screenshot">
-          <img src="rephoto/muscu2.png" alt="site muscu" class="project-screenshot">
+          <img src="rephoto/muscu.png" alt="Site passions 1" class="project-screenshot">
+          <img src="rephoto/muscu2.png" alt="Site passions 2" class="project-screenshot">
         </dd>
       </dl>
     </article>
 
-    <!-- Projet 5 -->
-     <article class="project-card" style="background-image: url('rephoto/champ.jpg');">
+    <article class="project-card" id="projet-bot-discord" style="background-image: url('rephoto/champ.jpg');">
       <h2 class="project-title">Bot Discord</h2>
-      <p class="project-desc">Projet perso de modération Discord.</p>
+      <p class="project-desc">Projet personnel de modération et d’automatisation pour serveur Discord.</p>
       <dl class="project-structure">
         <dt>🎯 Objectif</dt>
-        <dd>Quand j'avais 12 ans je voulais me lancer dans le code. J'ai donc créé un bot Discord pour modérer mon serveur entre amis (éviter les spams) et ajouter des ester-eggs.</dd>
-        <dt>🛠️ Action</dt>
+        <dd>Créer un bot capable de modérer un serveur entre amis, limiter les spams et ajouter des interactions personnalisées.</dd>
+        <dt>🛠️ Travail réalisé</dt>
         <dd>
           <ul>
-            <li>Filtrage de mot.</li>
-            <li>Ajout d'ester-eggs.</li>
-            <li>Configurations de rôles Discord.</li>
+            <li>Filtrage de mots et règles de modération</li>
+            <li>Ajout d’easter eggs</li>
+            <li>Configuration de rôles et d’automatismes</li>
           </ul>
         </dd>
-        <dt>💻 Technos utilisées</dt>
-        <dd>JavaScript</dd>
-        <dt>📸 Aperçu + Lien</dt>
+        <dt>💻 Compétences mobilisées</dt>
+        <dd class="project-skills">
+          <a class="project-skill-link" href="competences.html#skill-dev">Développement</a>
+          <a class="project-skill-link" href="competences.html#skill-autonomie">Autonomie</a>
+        </dd>
+        <dt>📎 Ressources</dt>
+        <dd class="project-meta">
+          <a class="project-link" href="https://discord.gg/U9jDPv8M" target="_blank">🔗 Voir le serveur</a>
+        </dd>
+        <dt>📸 Aperçu</dt>
         <dd>
-          <a href="https://discord.gg/U9jDPv8M" target="_blank">🔗 Lien vers le serveur Discord</a>
           <img src="rephoto/botdiscord.png" alt="Bot Discord" class="project-screenshot">
-          <img src="rephoto/rolebot2.png" alt="Rôle du bot Discord" class="project-screenshot">
+          <img src="rephoto/rolebot2.png" alt="Gestion des rôles" class="project-screenshot">
         </dd>
       </dl>
     </article>
 
-<!-- Projet 6 -->
-     <article class="project-card" style="background-image: url('rephoto/champfleur.jpg');">
-      <h2 class="project-title">Mod Minecraft - Code</h2>
-      <p class="project-desc">Projet perso de mod Minecraft.</p>
+    <article class="project-card" id="projet-mod-code" style="background-image: url('rephoto/champfleur.jpg');">
+      <h2 class="project-title">Mod Minecraft — Développement</h2>
+      <p class="project-desc">Création d’un mod personnel inspiré du mode Fallen Kingdom.</p>
       <dl class="project-structure">
         <dt>🎯 Objectif</dt>
-        <dd>Développer ma propre version du mode de jeu : Fallen Kingdom. Créer un système de classe et de super-pouvoirs uniques ainsi que des items légendaires.</dd>
-        <dt>🛠️ Action</dt>
+        <dd>Développer un univers de jeu avec classes, capacités spéciales, boss et objets légendaires.</dd>
+        <dt>🛠️ Travail réalisé</dt>
         <dd>
           <ul>
-            <li>Système de classe.</li>
-            <li>Création d'ulti.</li>
-            <li>Dévelopemment d'IA pour le BOSS.</li>
-            <li>Création d'items.</li>
+            <li>Système de classes et mécaniques de gameplay</li>
+            <li>Capacités spéciales et items uniques</li>
+            <li>Début d’IA pour boss</li>
           </ul>
         </dd>
-        <dt>💻 Technos utilisées</dt>
-        <dd>JAVA et MCreator</dd>
-        <dt>📸 Aperçu + Lien</dt>
+        <dt>💻 Compétences mobilisées</dt>
+        <dd class="project-skills">
+          <a class="project-skill-link" href="competences.html#skill-dev">Développement</a>
+          <a class="project-skill-link" href="competences.html#skill-autonomie">Autonomie</a>
+        </dd>
+        <dt>📎 Ressources</dt>
+        <dd class="project-meta">
+          <a class="project-doc-link" href="doc/fallen_kingdom_mod_quentin-1.0.0-neoforge-1.21.4.jar" target="_blank">📦 Télécharger le mod</a>
+        </dd>
+        <dt>📸 Aperçu</dt>
         <dd>
-          <a href="doc/fallen_kingdom_mod_quentin-1.0.0-neoforge-1.21.4.jar" target="_blank">🔗 Lien de téléchargement du mod</a>
           <img src="rephoto/exemple_ingame.png" alt="Ingame exemple" class="project-screenshot">
           <img src="rephoto/capacite.png" alt="Capacité" class="project-screenshot">
-          <img src="rephoto/selecteur_classe.png" alt="Sélécteur de classe" class="project-screenshot">
+          <img src="rephoto/selecteur_classe.png" alt="Sélecteur de classe" class="project-screenshot">
           <img src="rephoto/bloc_empire.png" alt="Bloc de l'empire" class="project-screenshot">
         </dd>
       </dl>
     </article>
 
-<!-- Projet 7 -->
-     <article class="project-card" style="background-image: url('rephoto/chambre.jpeg');">
-      <h2 class="project-title">Mod Minecraft - Animation</h2>
-      <p class="project-desc">Projet perso de mod Minecraft.</p>
+    <article class="project-card" id="projet-mod-anim" style="background-image: url('rephoto/chambre.jpeg');">
+      <h2 class="project-title">Mod Minecraft — Animation & modélisation</h2>
+      <p class="project-desc">Conception visuelle de modèles 3D, items et animations pour le mod.</p>
       <dl class="project-structure">
         <dt>🎯 Objectif</dt>
-        <dd>Développer la partie graphique de mon Mod minecraft.</dd>
-        <dt>🛠️ Action</dt>
+        <dd>Développer toute la partie graphique et animée du mod pour renforcer l’immersion en jeu.</dd>
+        <dt>🛠️ Travail réalisé</dt>
         <dd>
           <ul>
-            <li>Animation 3D.</li>
-            <li>Modèle 3D d'items.</li>
-            <li>Modèle 3D d'armures.</li>
-            <li>Modèle 3D d'entités.</li>
+            <li>Création de modèles 3D</li>
+            <li>Animation d’entités et de boss</li>
+            <li>Intégration des assets dans le projet</li>
           </ul>
         </dd>
-        <dt>💻 Technos utilisées</dt>
-        <dd>BlockBench et MCreator</dd>
-        <dt>📸 Aperçu + Lien</dt>
+        <dt>💻 Compétences mobilisées</dt>
+        <dd class="project-skills">
+          <a class="project-skill-link" href="competences.html#skill-autonomie">Autonomie</a>
+          <a class="project-skill-link" href="competences.html#skill-organisation">Organisation</a>
+        </dd>
+        <dt>📎 Ressources</dt>
+        <dd class="project-meta">
+          <a class="project-doc-link" href="doc/fallen_kingdom_mod_quentin-1.0.0-neoforge-1.21.4.jar" target="_blank">📦 Télécharger le mod</a>
+        </dd>
+        <dt>🎬 Aperçu</dt>
         <dd>
-          <a href="doc/fallen_kingdom_mod_quentin-1.0.0-neoforge-1.21.4.jar" target="_blank">🔗 Lien de téléchargement du mod</a>
-          <br><br><br><br><br>
           <div class="video-group">
-          <video src="rephoto/modeleboss.mp4" autoplay muted loop playsinline class="project-video"></video>
-          <video src="rephoto/anim.mp4" autoplay muted loop playsinline class="project-video"></video>
-  </div>
+            <video src="rephoto/modeleboss.mp4" autoplay muted loop playsinline class="project-video"></video>
+            <video src="rephoto/anim.mp4" autoplay muted loop playsinline class="project-video"></video>
+          </div>
         </dd>
       </dl>
     </article>
 
+    <article class="project-card" id="projet-multisite" style="background-image: url('rephoto/arbrevg.jpg');">
+      <h2 class="project-title">Réseau informatique sécurisé multisite</h2>
+      <p class="project-desc">Conception d’une infrastructure réseau sécurisée reliant plusieurs sites.</p>
+      <dl class="project-structure">
+        <dt>🎯 Objectif</dt>
+        <dd>Concevoir et justifier une architecture réseau multisite sécurisée répondant aux besoins d’une entreprise et identifier les vulnérabilités des équipements et du système d’information.</dd>
+        <dt>🛠️ Travail réalisé</dt>
+        <dd>
+          <ul>
+            <li>Conception d’une architecture multisite avec routage</li>
+            <li>Mise en place du filtrage, de la redondance et des tunnels VPN</li>
+            <li>Ajout de services réseau avancés et du Wi-Fi</li>
+            <li>Tests de performance et analyse sécurité</li>
+          </ul>
+        </dd>
+        <dt>💻 Compétences mobilisées</dt>
+        <dd class="project-skills">
+          <a class="project-skill-link" href="competences.html#skill-reseau">Infrastructure réseau</a>
+          <a class="project-skill-link" href="competences.html#skill-packettracer">Packet Tracer</a>
+          <a class="project-skill-link" href="competences.html#skill-cyber">Cybersécurité</a>
+          <a class="project-skill-link" href="competences.html#skill-equipe">Travail d’équipe</a>
+        </dd>
+        <dt>📎 Ressources</dt>
+        <dd class="project-meta">
+          <a class="project-doc-link" href="doc/projet1.pdf" target="_blank">📄 Ouvrir le compte rendu</a>
+        </dd>
+        <dt>📸 Aperçu</dt>
+        <dd><img src="rephoto/projet1.jpg" alt="Réseau informatique multisite" class="project-screenshot"></dd>
+      </dl>
+    </article>
+
+    <article class="project-card" id="projet-apps" style="background-image: url('rephoto/terrasse.jpg');">
+      <h2 class="project-title">Applications communicantes</h2>
+      <p class="project-desc">Écosystème applicatif pour détecter, stocker et consulter des failles réseau.</p>
+      <dl class="project-structure">
+        <dt>🎯 Objectif</dt>
+        <dd>Réaliser un site web de gestion des failles détectées sur le réseau local, les stocker en base de données et proposer des clients capables de les consulter.</dd>
+        <dt>🛠️ Travail réalisé</dt>
+        <dd>
+          <ul>
+            <li>Développement du site principal</li>
+            <li>Création d’un outil Java pour détecter et insérer les failles en base</li>
+            <li>Développement d’une application Android en Java consommant une API JSON</li>
+          </ul>
+        </dd>
+        <dt>💻 Compétences mobilisées</dt>
+        <dd class="project-skills">
+          <a class="project-skill-link" href="competences.html#skill-dev">Développement</a>
+          <a class="project-skill-link" href="competences.html#skill-bdd">Bases de données</a>
+          <a class="project-skill-link" href="competences.html#skill-cyber">Cybersécurité</a>
+          <a class="project-skill-link" href="competences.html#skill-equipe">Travail d’équipe</a>
+        </dd>
+        <dt>📎 Ressources</dt>
+        <dd class="project-meta">
+          <a class="project-doc-link" href="doc/Site_Cybersecurite.zip" target="_blank">📦 Télécharger l'application</a>
+        </dd>
+        <dt>📸 Aperçu</dt>
+        <dd><img src="rephoto/projet2.jpg" alt="Applications communicantes" class="project-screenshot"></dd>
+      </dl>
+    </article>
+
+    <article class="project-card" id="projet-audio" style="background-image: url('rephoto/fleurvg.jpg');">
+      <h2 class="project-title">Système de transmission audio</h2>
+      <p class="project-desc">Interface de lecture, d’analyse et d’amélioration de fichiers audio.</p>
+      <dl class="project-structure">
+        <dt>🎯 Objectif</dt>
+        <dd>Développer une interface dans un notebook Jupyter pour lire des fichiers FLAC, WAV et MP3, afficher la représentation spectrale, la pochette, les métadonnées et proposer des outils de conversion.</dd>
+        <dt>🛠️ Travail réalisé</dt>
+        <dd>
+          <ul>
+            <li>Création d’un notebook avec ipywidgets</li>
+            <li>Utilisation de pipelines GStreamer pour le traitement</li>
+            <li>Ajout de visualisations audio et fonctions d’amélioration</li>
+          </ul>
+        </dd>
+        <dt>💻 Compétences mobilisées</dt>
+        <dd class="project-skills">
+          <a class="project-skill-link" href="competences.html#skill-dev">Développement</a>
+          <a class="project-skill-link" href="competences.html#skill-telecom">Télécommunications</a>
+          <a class="project-skill-link" href="competences.html#skill-analyse">Analyse</a>
+        </dd>
+        <dt>📎 Ressources</dt>
+        <dd class="project-meta">
+          <a class="project-doc-link" href="doc/SAE31-GIUFFRE_GALES.ipynb" target="_blank">📄 Télécharger le notebook</a>
+        </dd>
+        <dt>📸 Aperçu</dt>
+        <dd><img src="rephoto/projet3.jpg" alt="Système de transmission audio" class="project-screenshot"></dd>
+      </dl>
+    </article>
+
+    <article class="project-card" id="projet-garage" style="background-image: url('rephoto/chambre.jpeg');">
+      <h2 class="project-title">Site pour mon garagiste</h2>
+      <p class="project-desc">Projet web orienté vitrine et prise de contact pour un professionnel de l’automobile.</p>
+      <dl class="project-structure">
+        <dt>🎯 Objectif</dt>
+        <dd>Créer un site clair et rassurant pour présenter les prestations du garagiste, faciliter la prise de rendez-vous et valoriser son image professionnelle.</dd>
+        <dt>🛠️ Travail réalisé</dt>
+        <dd>
+          <ul>
+            <li>Conception d’une interface moderne et lisible</li>
+            <li>Organisation des prestations, horaires et moyens de contact</li>
+            <li>Travail sur la confiance utilisateur et la clarté des informations</li>
+          </ul>
+        </dd>
+        <dt>💻 Compétences mobilisées</dt>
+        <dd class="project-skills">
+          <a class="project-skill-link" href="competences.html#skill-dev">Développement</a>
+          <a class="project-skill-link" href="competences.html#skill-communication">Communication claire</a>
+          <a class="project-skill-link" href="competences.html#skill-analyse">Analyse</a>
+          <a class="project-skill-link" href="competences.html#skill-cyber">Cybersécurité</a>
+        </dd>
+        <dt>📎 Ressources</dt>
+        <dd class="project-meta">
+          <a class="project-doc-link" href="https://quentinakafluxyy.github.io/site_garagiste/site_garagiste/" target="_blank">🔗 Visiter le site</a>
+        </dd>
+        <dt>📸 Aperçu</dt>
+        <dd><img src="rephoto/projet5.jpg" alt="Site pour garagiste" class="project-screenshot"></dd>
+      </dl>
+    </article>
   </section>
 
   <footer>
