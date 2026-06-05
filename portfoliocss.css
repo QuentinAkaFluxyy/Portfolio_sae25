@@ -1139,3 +1139,233 @@ footer {
 .experience-summary-card {
   border: 1px solid rgba(0, 166, 81, 0.16);
 }
+
+/* Page projets */
+#projects.projects-page {
+  width: 90%;
+  max-width: 1200px;
+  margin: 80px auto;
+  display: block;
+}
+
+/* Introduction */
+.projects-intro {
+  text-align: center;
+  max-width: 850px;
+  margin: 0 auto 45px auto;
+}
+
+.projects-intro h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.projects-intro p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+/* Boutons de navigation */
+.projects-categories {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 70px;
+}
+
+.projects-categories a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 22px;
+  border-radius: 30px;
+  border: 1px solid rgba(255,255,255,0.4);
+  background: rgba(255,255,255,0.12);
+  transition: 0.3s;
+}
+
+.projects-categories a:hover {
+  background: rgba(255,255,255,0.25);
+  transform: translateY(-3px);
+}
+
+/* Chaque catégorie prend toute la largeur */
+.project-category {
+  width: 100%;
+  margin-bottom: 90px;
+}
+
+.project-category h2 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+  padding-left: 15px;
+  border-left: 5px solid white;
+}
+
+.category-desc {
+  max-width: 800px;
+  line-height: 1.7;
+  margin-bottom: 30px;
+}
+
+/* Grille de cartes */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+}
+
+/* Cartes */
+.project-card {
+  min-height: auto;
+  border-radius: 20px;
+  padding: 25px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.25);
+}
+
+.project-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    rgba(0,0,0,0.65),
+    rgba(0,0,0,0.78)
+  );
+  z-index: 0;
+}
+
+.project-card > * {
+  position: relative;
+  z-index: 1;
+}
+
+.project-title {
+  font-size: 1.5rem;
+  margin-bottom: 12px;
+}
+
+.project-desc {
+  font-style: italic;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.project-structure dt {
+  margin-top: 18px;
+  margin-bottom: 6px;
+  font-weight: bold;
+}
+
+.project-structure dd {
+  margin-left: 0;
+  line-height: 1.6;
+}
+
+.project-structure ul {
+  padding-left: 18px;
+}
+
+/* Tags compétences */
+.project-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.project-skill-link,
+.project-link,
+.project-doc-link {
+  display: inline-block;
+  padding: 8px 13px;
+  border-radius: 12px;
+  background: rgba(255,255,255,0.18);
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.project-skill-link:hover,
+.project-link:hover,
+.project-doc-link:hover {
+  background: rgba(255,255,255,0.32);
+}
+
+/* Images */
+.project-screenshot {
+  width: 100%;
+  max-height: 250px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-top: 10px;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  #projects.projects-page {
+    width: 92%;
+    margin-top: 50px;
+  }
+
+  .projects-intro h1 {
+    font-size: 2.2rem;
+  }
+
+  .project-category h2 {
+    font-size: 1.8rem;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+body.top {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at 15% 20%, rgba(255, 214, 102, 0.18), transparent 28%),
+    radial-gradient(circle at 85% 15%, rgba(112, 161, 255, 0.28), transparent 30%),
+    radial-gradient(circle at 70% 80%, rgba(30, 64, 175, 0.45), transparent 35%),
+    linear-gradient(135deg, #1d4ed8 0%, #3b82f6 45%, #1e3a8a 100%);
+  background-attachment: fixed;
+  color: white;
+}
+
+body.top::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: -1;
+  background-image:
+    radial-gradient(circle, rgba(255,255,255,0.35) 1px, transparent 1px),
+    radial-gradient(circle, rgba(255,255,255,0.22) 1px, transparent 1px);
+  background-size: 90px 90px, 140px 140px;
+  background-position: 0 0, 40px 60px;
+  opacity: 0.45;
+}
+
+.project-category {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 28px;
+  padding: 35px;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.18);
+}
+
+.projects-intro {
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto 55px auto;
+  padding: 35px 30px;
+  border-radius: 28px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.18);
+}
