@@ -24,12 +24,21 @@
     </svg>
 
     <p class="skills-intro">
-      Cette page regroupe mes compétences techniques et humaines. Chaque bloc peut être déplié pour voir
-      les outils maîtrisés, mon niveau et les projets concrets dans lesquels j’ai mobilisé ces compétences.
+      Cette partie présente les compétences que je développe en formation, en projets et en alternance.
+      Elles montrent à la fois mes bases techniques, ma méthode de travail et ma capacité à m'adapter.
+      Les filtres permettent de retrouver rapidement chaque famille de compétences.
     </p>
 
+    <div class="skills-filters" aria-label="Filtrer les compétences">
+      <button class="skill-filter active" type="button" data-filter="all">Toutes</button>
+      <button class="skill-filter" type="button" data-filter="reseau">Réseaux</button>
+      <button class="skill-filter" type="button" data-filter="telecom">Télécommunications</button>
+      <button class="skill-filter" type="button" data-filter="dev">Développement</button>
+      <button class="skill-filter" type="button" data-filter="soft">Soft skills</button>
+    </div>
+
     <ul class="skills-list">
-      <li class="skill-item" id="skill-reseau" data-level="92">
+      <li class="skill-item" id="skill-reseau" data-category="reseau" data-level="92">
         <button class="skill-btn" aria-expanded="false">
           <span class="skill-btn-text">
             <span class="skill-name">Infrastructure réseau & configuration Cisco</span>
@@ -56,7 +65,7 @@
         </div>
       </li>
 
-      <li class="skill-item" id="skill-packettracer" data-level="88">
+      <li class="skill-item" id="skill-packettracer" data-category="reseau" data-level="88">
         <button class="skill-btn" aria-expanded="false">
           <span class="skill-btn-text">
             <span class="skill-name">Simulation réseau avec Packet Tracer</span>
@@ -77,7 +86,84 @@
         </div>
       </li>
 
-      <li class="skill-item" id="skill-cyber" data-level="90">
+      <li class="skill-item" id="skill-adressage" data-category="reseau" data-level="86">
+        <button class="skill-btn" aria-expanded="false">
+          <span class="skill-btn-text">
+            <span class="skill-name">Adressage IP & sous-réseaux</span>
+            <span class="skill-subtitle">Plan d’adressage, masques, passerelles et segmentation</span>
+          </span>
+          <span class="skill-btn-icon">⌄</span>
+        </button>
+        <div class="skill-bar"><div class="skill-fill"></div></div>
+        <div class="skill-detail">
+          <p>
+            Je sais construire un plan d’adressage cohérent pour organiser les machines, séparer les zones réseau
+            et faciliter le diagnostic.
+          </p>
+          <ul>
+            <li>Calcul et choix de sous-réseaux</li>
+            <li>Attribution des passerelles et plages IP</li>
+            <li>Vérification de la cohérence avec les VLAN</li>
+          </ul>
+          <div class="skill-projects">
+            <a class="skill-project-link" href="projets.html#projet-sae21">Voir SAE 21</a>
+            <a class="skill-project-link" href="projets.html#projet-multisite">Voir Réseau multisite</a>
+          </div>
+        </div>
+      </li>
+
+      <li class="skill-item" id="skill-routage" data-category="reseau" data-level="84">
+        <button class="skill-btn" aria-expanded="false">
+          <span class="skill-btn-text">
+            <span class="skill-name">Routage & interconnexion de réseaux</span>
+            <span class="skill-subtitle">Routage inter-VLAN, routes, tests et continuité des flux</span>
+          </span>
+          <span class="skill-btn-icon">⌄</span>
+        </button>
+        <div class="skill-bar"><div class="skill-fill"></div></div>
+        <div class="skill-detail">
+          <p>
+            J’ai appris à relier plusieurs réseaux entre eux et à contrôler que les communications passent par les
+            bons chemins.
+          </p>
+          <ul>
+            <li>Mise en place du routage inter-VLAN</li>
+            <li>Configuration de routes et passerelles</li>
+            <li>Tests avec ping, traceroute et tables de routage</li>
+          </ul>
+          <div class="skill-projects">
+            <a class="skill-project-link" href="projets.html#projet-sae21">Voir SAE 21</a>
+            <a class="skill-project-link" href="projets.html#projet-multisite">Voir Réseau multisite</a>
+          </div>
+        </div>
+      </li>
+
+      <li class="skill-item" id="skill-services-reseau" data-category="reseau" data-level="83">
+        <button class="skill-btn" aria-expanded="false">
+          <span class="skill-btn-text">
+            <span class="skill-name">Services réseau</span>
+            <span class="skill-subtitle">DHCP, DNS, NAT, accès aux services et validation</span>
+          </span>
+          <span class="skill-btn-icon">⌄</span>
+        </button>
+        <div class="skill-bar"><div class="skill-fill"></div></div>
+        <div class="skill-detail">
+          <p>
+            Je sais mettre en place les services essentiels qui permettent à un réseau d’être utilisable au quotidien.
+          </p>
+          <ul>
+            <li>Configuration DHCP pour l’attribution automatique</li>
+            <li>Utilisation du DNS pour la résolution de noms</li>
+            <li>Configuration NAT pour la sortie vers d’autres réseaux</li>
+          </ul>
+          <div class="skill-projects">
+            <a class="skill-project-link" href="projets.html#projet-sae21">Voir SAE 21</a>
+            <a class="skill-project-link" href="projets.html#projet-multisite">Voir Réseau multisite</a>
+          </div>
+        </div>
+      </li>
+
+      <li class="skill-item" id="skill-cyber" data-category="reseau" data-level="90">
         <button class="skill-btn" aria-expanded="false">
           <span class="skill-btn-text">
             <span class="skill-name">Cybersécurité</span>
@@ -99,13 +185,13 @@
           </ul>
           <div class="skill-projects">
             <a class="skill-project-link" href="projets.html#projet-sae21">Voir SAE 21</a>
-            <a class="skill-project-link" href="projets.html#projet-apps">Voir Applications communicantes</a>
+            <a class="skill-project-link" href="projets.html#projet-apps-reseaux">Voir Applications communicantes</a>
             <a class="skill-project-link" href="projets.html#projet-garage">Voir site garagiste</a>
           </div>
         </div>
       </li>
 
-      <li class="skill-item" id="skill-dev" data-level="91">
+      <li class="skill-item" id="skill-dev" data-category="dev" data-level="91">
         <button class="skill-btn" aria-expanded="false">
           <span class="skill-btn-text">
             <span class="skill-name">Développement web & programmation</span>
@@ -125,14 +211,14 @@
           </ul>
           <div class="skill-projects">
             <a class="skill-project-link" href="projets.html#projet-portfolio">Voir Portfolio</a>
-            <a class="skill-project-link" href="projets.html#projet-apps">Voir Applications communicantes</a>
+            <a class="skill-project-link" href="projets.html#projet-apps-programmation">Voir Applications communicantes</a>
             <a class="skill-project-link" href="projets.html#projet-audio">Voir Transmission audio</a>
             <a class="skill-project-link" href="projets.html#projet-garage">Voir site garagiste</a>
           </div>
         </div>
       </li>
 
-      <li class="skill-item" id="skill-bdd" data-level="84">
+      <li class="skill-item" id="skill-bdd" data-category="dev" data-level="84">
         <button class="skill-btn" aria-expanded="false">
           <span class="skill-btn-text">
             <span class="skill-name">Bases de données</span>
@@ -146,13 +232,107 @@
             J’ai appris à concevoir des structures de données simples et efficaces pour stocker, retrouver et exploiter des informations côté application.
           </p>
           <div class="skill-projects">
-            <a class="skill-project-link" href="projets.html#projet-apps">Voir Applications communicantes</a>
+            <a class="skill-project-link" href="projets.html#projet-apps-programmation">Voir Applications communicantes</a>
             <a class="skill-project-link" href="projets.html#projet-garage">Voir site garagiste</a>
           </div>
         </div>
       </li>
 
-      <li class="skill-item" id="skill-telecom" data-level="82">
+      <li class="skill-item" id="skill-vpn-redondance" data-category="reseau" data-level="79">
+        <button class="skill-btn" aria-expanded="false">
+          <span class="skill-btn-text">
+            <span class="skill-name">VPN, redondance & disponibilité</span>
+            <span class="skill-subtitle">Liaisons multisites, tunnels, continuité et tolérance aux pannes</span>
+          </span>
+          <span class="skill-btn-icon">⌄</span>
+        </button>
+        <div class="skill-bar"><div class="skill-fill"></div></div>
+        <div class="skill-detail">
+          <p>
+            Dans les architectures multisites, j’ai travaillé sur la fiabilité des échanges et la sécurisation des
+            communications entre plusieurs zones.
+          </p>
+          <ul>
+            <li>Mise en place de tunnels entre sites</li>
+            <li>Réflexion sur la redondance des liens</li>
+            <li>Tests de continuité et de disponibilité</li>
+          </ul>
+          <div class="skill-projects">
+            <a class="skill-project-link" href="projets.html#projet-multisite">Voir Réseau multisite</a>
+            <a class="skill-project-link" href="projets.html#projet-cyber-multisite">Voir partie cybersécurité</a>
+          </div>
+        </div>
+      </li>
+
+      <li class="skill-item" id="skill-api" data-category="dev" data-level="82">
+        <button class="skill-btn" aria-expanded="false">
+          <span class="skill-btn-text">
+            <span class="skill-name">API & applications communicantes</span>
+            <span class="skill-subtitle">Échanges JSON, site web, outil Java et application Android</span>
+          </span>
+          <span class="skill-btn-icon">⌄</span>
+        </button>
+        <div class="skill-bar"><div class="skill-fill"></div></div>
+        <div class="skill-detail">
+          <p>
+            J’ai travaillé sur des applications capables de partager les mêmes données entre plusieurs supports.
+            Cela m’a appris à penser les échanges, la structure des informations et la cohérence entre les outils.
+          </p>
+          <ul>
+            <li>Utilisation de données JSON</li>
+            <li>Connexion entre site, application et base de données</li>
+            <li>Organisation des flux entre plusieurs clients</li>
+          </ul>
+          <div class="skill-projects">
+            <a class="skill-project-link" href="projets.html#projet-apps-reseaux">Voir Applications communicantes</a>
+            <a class="skill-project-link" href="projets.html#projet-cyber-apps">Voir partie cybersécurité</a>
+          </div>
+        </div>
+      </li>
+
+      <li class="skill-item" id="skill-interface" data-category="dev" data-level="86">
+        <button class="skill-btn" aria-expanded="false">
+          <span class="skill-btn-text">
+            <span class="skill-name">Interfaces web & expérience utilisateur</span>
+            <span class="skill-subtitle">Lisibilité, navigation, pages vitrines et interfaces pratiques</span>
+          </span>
+          <span class="skill-btn-icon">⌄</span>
+        </button>
+        <div class="skill-bar"><div class="skill-fill"></div></div>
+        <div class="skill-detail">
+          <p>
+            Mes projets web m’ont appris à créer des interfaces claires, agréables à parcourir et adaptées au besoin.
+            Je cherche surtout à rendre l’information facile à comprendre.
+          </p>
+          <div class="skill-projects">
+            <a class="skill-project-link" href="projets.html#projet-portfolio">Voir Portfolio</a>
+            <a class="skill-project-link" href="projets.html#projet-garage">Voir site garagiste</a>
+            <a class="skill-project-link" href="projets.html#projet-gestion-taches">Voir gestionnaire de tâches</a>
+          </div>
+        </div>
+      </li>
+
+      <li class="skill-item" id="skill-embarque" data-category="dev" data-level="78">
+        <button class="skill-btn" aria-expanded="false">
+          <span class="skill-btn-text">
+            <span class="skill-name">Systèmes embarqués & Raspberry Pi</span>
+            <span class="skill-subtitle">Capteurs, réseau local, collecte et exploitation de données</span>
+          </span>
+          <span class="skill-btn-icon">⌄</span>
+        </button>
+        <div class="skill-bar"><div class="skill-fill"></div></div>
+        <div class="skill-detail">
+          <p>
+            Avec le projet de banc avionique intelligent, j’ai découvert la logique d’un système qui collecte,
+            transmet et exploite des données depuis un environnement matériel.
+          </p>
+          <div class="skill-projects">
+            <a class="skill-project-link" href="projets.html#projet-thales">Voir SAE 23 / 24</a>
+          </div>
+        </div>
+      </li>
+
+      <li class="skill-item" id="skill-telecom" data-category="telecom" data-level="82">
         <button class="skill-btn" aria-expanded="false">
           <span class="skill-btn-text">
             <span class="skill-name">Télécommunications</span>
@@ -168,11 +348,134 @@
           </p>
           <div class="skill-projects">
             <a class="skill-project-link" href="projets.html#projet-audio">Voir Système de transmission audio</a>
+            <a class="skill-project-link" href="projets.html#projet-antennes">Voir projet antennes</a>
           </div>
         </div>
       </li>
 
-      <li class="skill-item" id="skill-analyse" data-level="83">
+      <li class="skill-item" id="skill-signal" data-category="telecom" data-level="80">
+        <button class="skill-btn" aria-expanded="false">
+          <span class="skill-btn-text">
+            <span class="skill-name">Traitement du signal & audio</span>
+            <span class="skill-subtitle">Analyse audio, visualisation, amélioration et transmission</span>
+          </span>
+          <span class="skill-btn-icon">⌄</span>
+        </button>
+        <div class="skill-bar"><div class="skill-fill"></div></div>
+        <div class="skill-detail">
+          <p>
+            J’ai manipulé des fichiers audio et des signaux pour mieux comprendre leur lecture, leur analyse
+            et leur transmission dans une chaîne technique.
+          </p>
+          <ul>
+            <li>Lecture et analyse de fichiers audio</li>
+            <li>Visualisation de signaux</li>
+            <li>Observation de paramètres de transmission/réception</li>
+          </ul>
+          <div class="skill-projects">
+            <a class="skill-project-link" href="projets.html#projet-audio">Voir Transmission audio</a>
+            <a class="skill-project-link" href="projets.html#projet-antennes">Voir projet antennes</a>
+          </div>
+        </div>
+      </li>
+
+      <li class="skill-item" id="skill-antennes" data-category="telecom" data-level="78">
+        <button class="skill-btn" aria-expanded="false">
+          <span class="skill-btn-text">
+            <span class="skill-name">Antennes & propagation</span>
+            <span class="skill-subtitle">Modélisation, réception, influence des paramètres et qualité du signal</span>
+          </span>
+          <span class="skill-btn-icon">⌄</span>
+        </button>
+        <div class="skill-bar"><div class="skill-fill"></div></div>
+        <div class="skill-detail">
+          <p>
+            Le projet sur les antennes m’a permis d’observer comment un signal est transmis, reçu et influencé par
+            les réglages de la chaîne radio.
+          </p>
+          <ul>
+            <li>Modélisation et configuration d’antennes</li>
+            <li>Analyse du signal reçu</li>
+            <li>Compréhension de l’impact des paramètres sur la réception</li>
+          </ul>
+          <div class="skill-projects">
+            <a class="skill-project-link" href="projets.html#projet-antennes">Voir projet antennes</a>
+          </div>
+        </div>
+      </li>
+
+      <li class="skill-item" id="skill-chaine-transmission" data-category="telecom" data-level="81">
+        <button class="skill-btn" aria-expanded="false">
+          <span class="skill-btn-text">
+            <span class="skill-name">Chaîne de transmission/réception</span>
+            <span class="skill-subtitle">Émission, transport, réception, conversion et analyse du signal</span>
+          </span>
+          <span class="skill-btn-icon">⌄</span>
+        </button>
+        <div class="skill-bar"><div class="skill-fill"></div></div>
+        <div class="skill-detail">
+          <p>
+            Je sais décomposer une transmission en étapes pour comprendre où le signal est produit, transporté,
+            reçu puis exploité.
+          </p>
+          <ul>
+            <li>Identification des étapes d’une chaîne technique</li>
+            <li>Observation des pertes ou modifications du signal</li>
+            <li>Lien entre théorie télécom et mesures concrètes</li>
+          </ul>
+          <div class="skill-projects">
+            <a class="skill-project-link" href="projets.html#projet-audio">Voir Transmission audio</a>
+            <a class="skill-project-link" href="projets.html#projet-antennes">Voir projet antennes</a>
+          </div>
+        </div>
+      </li>
+
+      <li class="skill-item" id="skill-outils-audio" data-category="telecom" data-level="77">
+        <button class="skill-btn" aria-expanded="false">
+          <span class="skill-btn-text">
+            <span class="skill-name">Outils d’analyse audio</span>
+            <span class="skill-subtitle">Jupyter, ipywidgets, GStreamer, lecture et amélioration audio</span>
+          </span>
+          <span class="skill-btn-icon">⌄</span>
+        </button>
+        <div class="skill-bar"><div class="skill-fill"></div></div>
+        <div class="skill-detail">
+          <p>
+            J’ai utilisé des outils techniques pour manipuler des fichiers audio, créer une interface de test et
+            visualiser les résultats.
+          </p>
+          <ul>
+            <li>Création d’un notebook interactif</li>
+            <li>Utilisation de pipelines GStreamer</li>
+            <li>Lecture, conversion et amélioration de fichiers audio</li>
+          </ul>
+          <div class="skill-projects">
+            <a class="skill-project-link" href="projets.html#projet-audio">Voir Transmission audio</a>
+          </div>
+        </div>
+      </li>
+
+      <li class="skill-item" id="skill-modelisation" data-category="dev" data-level="76">
+        <button class="skill-btn" aria-expanded="false">
+          <span class="skill-btn-text">
+            <span class="skill-name">Modélisation 3D & animation</span>
+            <span class="skill-subtitle">Création de modèles, items, entités et assets de jeu</span>
+          </span>
+          <span class="skill-btn-icon">⌄</span>
+        </button>
+        <div class="skill-bar"><div class="skill-fill"></div></div>
+        <div class="skill-detail">
+          <p>
+            Sur mon mod Minecraft, j’ai aussi travaillé la partie visuelle: modèles, animations et intégration
+            d’éléments graphiques dans un projet complet.
+          </p>
+          <div class="skill-projects">
+            <a class="skill-project-link" href="projets.html#projet-mod-anim">Voir Mod Minecraft - Animation</a>
+          </div>
+        </div>
+      </li>
+
+      <li class="skill-item" id="skill-analyse" data-category="soft" data-level="83">
         <button class="skill-btn" aria-expanded="false">
           <span class="skill-btn-text">
             <span class="skill-name">Analyse & résolution de problèmes</span>
@@ -192,7 +495,7 @@
         </div>
       </li>
 
-      <li class="skill-item" id="skill-organisation" data-level="86">
+      <li class="skill-item" id="skill-organisation" data-category="soft" data-level="86">
         <button class="skill-btn" aria-expanded="false">
           <span class="skill-btn-text">
             <span class="skill-name">Organisation</span>
@@ -206,13 +509,13 @@
             Sur les projets en équipe, je sais structurer les tâches, garder une vision d’ensemble et avancer avec méthode pour respecter les délais.
           </p>
           <div class="skill-projects">
-            <a class="skill-project-link" href="projets.html#projet-apps">Voir Applications communicantes</a>
+            <a class="skill-project-link" href="projets.html#projet-apps-reseaux">Voir Applications communicantes</a>
             <a class="skill-project-link" href="projets.html#projet-portfolio">Voir Portfolio</a>
           </div>
         </div>
       </li>
 
-      <li class="skill-item" id="skill-autonomie" data-level="89">
+      <li class="skill-item" id="skill-autonomie" data-category="soft" data-level="89">
         <button class="skill-btn" aria-expanded="false">
           <span class="skill-btn-text">
             <span class="skill-name">Autonomie</span>
@@ -232,7 +535,7 @@
         </div>
       </li>
 
-      <li class="skill-item" id="skill-communication" data-level="85">
+      <li class="skill-item" id="skill-communication" data-category="soft" data-level="85">
         <button class="skill-btn" aria-expanded="false">
           <span class="skill-btn-text">
             <span class="skill-name">Communication claire</span>
@@ -252,7 +555,7 @@
         </div>
       </li>
 
-      <li class="skill-item" id="skill-equipe" data-level="87">
+      <li class="skill-item" id="skill-equipe" data-category="soft" data-level="87">
         <button class="skill-btn" aria-expanded="false">
           <span class="skill-btn-text">
             <span class="skill-name">Travail d’équipe</span>
@@ -266,7 +569,7 @@
             Les projets de SAE m’ont appris à répartir le travail, m’adapter aux imprévus et garder une dynamique collective même quand l’équipe change en cours de route.
           </p>
           <div class="skill-projects">
-            <a class="skill-project-link" href="projets.html#projet-apps">Voir Applications communicantes</a>
+            <a class="skill-project-link" href="projets.html#projet-apps-reseaux">Voir Applications communicantes</a>
             <a class="skill-project-link" href="projets.html#projet-multisite">Voir Réseau multisite</a>
           </div>
         </div>
@@ -298,6 +601,24 @@
       });
     });
 
+    const skillItems = document.querySelectorAll('.skill-item');
+    const filterButtons = document.querySelectorAll('.skill-filter');
+
+    filterButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        const filter = button.dataset.filter;
+
+        filterButtons.forEach(filterButton => {
+          filterButton.classList.toggle('active', filterButton === button);
+        });
+
+        skillItems.forEach(item => {
+          const shouldShow = filter === 'all' || item.dataset.category === filter;
+          item.classList.toggle('hidden', !shouldShow);
+        });
+      });
+    });
+
     const observer = new IntersectionObserver(entries => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -308,7 +629,7 @@
       });
     }, { threshold: 0.3 });
 
-    document.querySelectorAll('.skill-item').forEach(item => observer.observe(item));
+    skillItems.forEach(item => observer.observe(item));
   </script>
 </body>
 </html>
